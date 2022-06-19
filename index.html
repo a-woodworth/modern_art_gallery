@@ -1,36 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Art gallery website</title>
-</head>
-<body>
+  <body>
+    <main class="container">
+      <section class="hero" aria-labelledby="intro-heading">
+        <picture class="hero__image">
+          <!-- desktop -->
+          <source type="image/jpeg" media="(min-width: 69.375rem)" srcset="assets/desktop/image-hero.jpg, assets/desktop/image-hero@2x.jpg 2x">
 
-  Modern Art Gallery
+          <!-- tablet -->
+          <source type="image/jpeg" media="(min-width: 48rem)" srcset="assets/tablet/image-hero.jpg, assets/tablet/image-hero@2x.jpg 2x">
 
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
+          <!-- mobile -->
+          <source type="image/jpeg"  srcset="assets/mobile/image-hero.jpg, assets/mobile/image-hero@2x.jpg 2x">
 
-  Our location
+          <img src="assets/mobile/image-hero.jpg" alt="Old Soul, this oil on canvas by artist A.A. RP shows the craggy, wrinkled face of a woman.">
+        </picture>
+        <h1 class="hero__heading" id="intro-heading">Modern<br>Art Gallery</h1>
+        <p class="hero__text">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+        <a href="location.html" target="_blank">
+          Our location
+          <span class="icon"><img src="assets/icon-arrow-right.svg" alt=""></span>
+        </a>
+      </section>
+      <section class="gallery" aria-labelledby="gallery-heading">
+        <div class="art-collection-1">
+          <picture class="collection-1__image">
+            <!-- desktop -->
+            <source type="image/jpeg" media="(min-width: 69.375rem)" srcset="assets/desktop/image-grid-1.jpg, assets/desktop/image-grid-1@2x.jpg 2x">
 
-  Your day at the gallery
+            <!-- tablet -->
+            <source type="image/jpeg" media="(min-width: 48rem)" srcset="assets/tablet/image-grid-1.jpg, assets/tablet/image-grid-1@2x.jpg 2x">
 
-  Wander through our distinct collections and find new insights about 
-  our artists. Dive into the details of their creative process.
+            <!-- mobile -->
+            <source type="image/jpeg" srcset="assets/mobile/image-grid-1.jpg, assets/mobile/image-grid-1@2x.jpg 2x">
 
-  Come &amp; be inspired
+            <img src="assets/mobile/image-grid-1.jpg" alt="The Mr. Moneybags gallery showcases a modern twist on floral arrangements using mixed media.">
+          </picture>
+          <div class="box">
+            <h2 class="gallery__heading" id="gallery-heading">Your day at the gallery</h2>
+            <p class="gallery__text">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
+          </div>
+        </div>
+        <div class="art-collection-2">
+          <picture class="collection-2__image-1">
+            <!-- desktop -->
+            <source type="image/jpeg" media="(min-width: 69.375rem)" srcset="assets/desktop/image-grid-2.jpg, assets/desktop/image-grid-2@2x.jpg 2x">
 
-  We’re excited to welcome you to our gallery and see how our collections 
-  influence you.
+            <!-- tablet -->
+            <source type="image/jpeg" media="(min-width: 48rem)" srcset="assets/tablet/image-grid-2.jpg, assets/tablet/image-grid-2@2x.jpg 2x">
 
-  Modern Art Gallery
+            <!-- mobile -->
+            <source type="image/jpeg" srcset="assets/mobile/image-grid-2.jpg, assets/mobile/image-grid-2@2x.jpg 2x">
 
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-</body>
+            <img src="assets/mobile/image-grid-2.jpg" alt="Circular Death, by Chicago-based artist Amanda Fallen, captures the sinister nature of a stairwell.">
+          </picture>
+          <picture class="collection-2__image-2">
+            <!-- desktop -->
+            <source type="image/jpeg" media="(min-width: 69.375rem)" srcset="assets/desktop/image-grid-3.jpg, assets/desktop/image-grid-3@2x.jpg 2x">
+
+            <!-- tablet -->
+            <source type="image/jpeg" media="(min-width: 48rem)" srcset="assets/tablet/image-grid-3.jpg, assets/tablet/image-grid-3@2x.jpg 2x">
+
+            <!-- mobile -->
+            <source type="image/jpeg" srcset="assets/mobile/image-grid-3.jpg, assets/mobile/image-grid-3@2x.jpg 2x">
+
+            <img src="assets/mobile/image-grid-3.jpg" alt="The gallery's circular ceiling arches over the upper viewing area. Designed by architect Hanz Lego.">
+          </picture>
+          <div class="box">
+            <h2 class="gallery__heading">Come &amp; be inspired</h2>
+            <p class="gallery__text">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="assets/logo-light.svg" class="logo" alt="">
+        <p class="about">
+          The Modern Art Gallery is free to all visitors and open seven days a week from <time datetime="08:00">8</time>am to <time datetime="21:00">9</time>pm. Find us at <address>99 King Street, Newport, USA.</address>
+        </p>
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a href="#" target="_blank">
+              <img src="assets/icon-facebook.svg" alt="Visit us on Facebook to learn about upcoming exhibits.">
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" target="_blank"><img src="assets/icon-instagram.svg" alt="Explore more of our artwork on Instagram."></a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" target="_blank"><img src="assets/icon-twitter.svg" alt="Follow us on Twitter for event news."></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
