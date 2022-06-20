@@ -27,7 +27,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+a {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
 }
@@ -52,6 +53,134 @@ p {
   color: hsl(0, 0%, 27%);
   font-family: "Outfit", sans-serif;
   line-height: 1.5;
+}
+
+a {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 3.64px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+a:focus {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.hero-container a {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: space-between;
+  max-width: 16.25rem;
+}
+.hero-container a .text {
+  align-self: flex-start;
+  padding: 1.5rem;
+}
+.hero-container a .icon {
+  align-self: flex-end;
+  background-color: hsl(24, 56%, 63%);
+  padding: 1.5rem;
+}
+.hero-container a:hover {
+  background-color: hsl(24, 56%, 63%);
+}
+.hero-container a:hover .icon {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.hero-container {
+  padding-inline: 1rem;
+  margin-bottom: 7.5rem;
+}
+
+.hero__image {
+  margin: 0 auto;
+}
+
+.hero__image img {
+  aspect-ratio: 3/2;
+  display: block;
+  height: auto;
+  max-height: 15rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero__heading,
+.hero__text {
+  margin-bottom: 2rem;
+}
+
+.hero__heading {
+  padding-top: 2rem;
+}
+
+.gallery {
+  padding-inline: 1rem;
+}
+
+.collection-1__image img {
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: contain;
+  width: 100%;
+}
+
+.gallery__heading {
+  padding-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.art-collection-1 {
+  margin-bottom: 2rem;
+}
+
+.art-collection-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+}
+
+.collection-2__image-1 img,
+.collection-2__image-2 img {
+  display: block;
+  object-fit: fill;
+  width: 100%;
+}
+
+.collection-2__image-1 img {
+  aspect-ratio: 343/480;
+  object-fit: fill;
+}
+
+.collection-2__image-2 img {
+  aspect-ratio: 16/9;
+  margin-bottom: 1rem;
+}
+
+.collection-2__text {
+  background-color: hsl(0, 0%, 8%);
+  height: 18.3125rem;
+  padding-inline: 1.5rem;
+  width: 100%;
+}
+
+.collection-2__text h2,
+.collection-2__text p {
+  color: hsl(0, 0%, 100%);
+}
+
+.collection-2__text h2 {
+  padding-top: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

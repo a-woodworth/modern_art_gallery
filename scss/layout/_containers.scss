@@ -3,3 +3,14 @@
 // ___________________________________________________________________
 
 @use '../utilities/variables' as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.hero-container {
+  padding-inline: 1rem;
+  margin-bottom: 7.5rem;
+}

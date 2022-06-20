@@ -34,18 +34,19 @@ body {
 }
 
 h1,
-h2 {
+h2,
+a {
   font-family: $font-family--primary;
   text-transform: uppercase;
 }
 
 h1 {
-  @include text($headingM, $font-weight--bold, $color-secondary);
+  @include text($headingM, $font-weight--black, $color-secondary);
   line-height: $line-heightXL;
 }
 
 h2 {
-  @include text($headingS, $font-weight--bold, $color-secondary);
+  @include text($headingS, $font-weight--black, $color-secondary);
   line-height: $line-heightXL;
 }
 
@@ -53,4 +54,16 @@ p {
   @include text($body__small, $font-weight--light, $color-tertiary);
   font-family: $font-family--secondary;
   line-height: $line__bodyS;
+}
+
+a {
+  @include text($link, $font-weight--bold, $color-primary);
+  letter-spacing: 3.64px;
+  line-height: $line__link;
+  text-decoration: none;
+
+  &:focus {
+    outline: auto 2px Highlight; // for non-webkit browsers
+    outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+  }
 }

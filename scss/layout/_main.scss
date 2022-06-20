@@ -4,3 +4,85 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.hero__image {
+  margin: 0 auto;
+}
+
+.hero__image img {
+  aspect-ratio: 3 / 2;
+  display: block;
+  height: auto;
+  max-height: 15rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero__heading,
+.hero__text {
+  margin-bottom: 2rem;
+}
+
+.hero__heading {
+  padding-top: 2rem;
+}
+
+.gallery {
+  padding-inline: 1rem;
+}
+
+.collection-1__image img {
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: contain;
+  width: 100%;
+}
+
+.gallery__heading {
+  padding-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.art-collection-1 {
+  margin-bottom: 2rem;
+}
+
+.art-collection-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+}
+
+.collection-2__image-1 img,
+.collection-2__image-2 img {
+  display: block;
+  object-fit: fill;
+  width: 100%;
+}
+
+.collection-2__image-1 img {
+  aspect-ratio: 343 / 480;
+  object-fit: fill;
+}
+
+.collection-2__image-2 img {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1rem;
+}
+
+.collection-2__text {
+  background-color: $color-secondary;
+  height: 18.3125rem;
+  padding-inline: 1.5rem;
+  width: 100%;
+}
+
+.collection-2__text h2,
+.collection-2__text p {
+  color: $color-primary;
+}
+
+.collection-2__text h2 {
+  padding-top: 3rem;
+}

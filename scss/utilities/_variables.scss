@@ -7,13 +7,14 @@ $font-family--primary: 'Big Shoulders Display', cursive;
 $font-family--secondary: 'Outfit', sans-serif;
 
 // Font Weights
-$font-weight--bold: 900;
+$font-weight--black: 900;
+$font-weight--bold: 800;
 $font-weight--light: 300;
 
 // Colors
 $almost-black: #{'hsl(0, 0%, 8%)'};
 $dark-gray: #{'hsl(0, 0%, 27%)'};
-$gold: #{'hsl(24, 49%, 84%)'};
+$gold: #{'hsl(24, 56%, 63%)'};
 $white: #{'hsl(0, 0%, 100%)'};
 
 // Color Usage
@@ -30,12 +31,14 @@ $headingS: 3.125rem;
 $headingXS: 2.25rem;
 $body__medium: 1.375rem;
 $body__small: 1.125rem;
+$link: 1.25rem;
 
 // Line Height
 $line-heightXL:0.9;
 $line-heightM: 0.8;
 $line__bodyM: 1.4;
 $line__bodyS: 1.5;
+$line__link: 1.2;
 $line-height__default: 1;  
 
 // Breakpoints

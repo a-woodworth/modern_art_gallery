@@ -28,12 +28,14 @@
 
           <img src="assets/mobile/image-hero.jpg" alt="Two visitors view Old Woman Wearing Glasses. This charcoal and oil on canvas by artist A.A. RP shows the craggy, wrinkled face of a woman.">
         </picture>
-        <h1 class="hero__heading" id="intro-heading">Modern<br>Art Gallery</h1>
-        <p class="hero__text">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
-        <a href="location.html" target="_blank">
-          Our location
-          <span class="icon"><img src="assets/icon-arrow-right.svg" alt=""></span>
-        </a>
+        <div class="hero-container">
+          <h1 class="hero__heading" id="intro-heading">Modern<br>Art Gallery</h1>
+          <p class="hero__text">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+          <a href="location.html" target="_blank">
+            <span class="text">Our location</span>
+            <span class="icon"><img src="assets/icon-arrow-right.svg" alt=""></span>
+          </a>
+        </div>
       </section>
       <section class="gallery" aria-labelledby="gallery-heading">
         <div class="art-collection-1">
@@ -49,8 +51,8 @@
 
             <img src="assets/mobile/image-grid-1.jpg" alt="The Mr. Moneybags gallery showcases a modern twist on floral arrangements using mixed media.">
           </picture>
-          <div class="box">
-            <h2 class="gallery__heading" id="gallery-heading">Your day at the gallery</h2>
+          <div class="collection-1__text">
+            <h2 class="gallery__heading" id="gallery-heading">Your day<br>at the gallery</h2>
             <p class="gallery__text">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
           </div>
         </div>
@@ -67,21 +69,23 @@
 
             <img src="assets/mobile/image-grid-2.jpg" alt="Circular Death, by Chicago-based artist Amanda Fallen, captures the sinister nature of a stairwell.">
           </picture>
-          <picture class="collection-2__image-2">
-            <!-- desktop -->
-            <source type="image/jpeg" media="(min-width: 69.375rem)" srcset="assets/desktop/image-grid-3.jpg, assets/desktop/image-grid-3@2x.jpg 2x">
+          <div class="art-container">
+            <picture class="collection-2__image-2">
+              <!-- desktop -->
+              <source type="image/jpeg" media="(min-width: 69.375rem)" srcset="assets/desktop/image-grid-3.jpg, assets/desktop/image-grid-3@2x.jpg 2x">
 
-            <!-- tablet -->
-            <source type="image/jpeg" media="(min-width: 48rem)" srcset="assets/tablet/image-grid-3.jpg, assets/tablet/image-grid-3@2x.jpg 2x">
+              <!-- tablet -->
+              <source type="image/jpeg" media="(min-width: 48rem)" srcset="assets/tablet/image-grid-3.jpg, assets/tablet/image-grid-3@2x.jpg 2x">
 
-            <!-- mobile -->
-            <source type="image/jpeg" srcset="assets/mobile/image-grid-3.jpg, assets/mobile/image-grid-3@2x.jpg 2x">
+              <!-- mobile -->
+              <source type="image/jpeg" srcset="assets/mobile/image-grid-3.jpg, assets/mobile/image-grid-3@2x.jpg 2x">
 
-            <img src="assets/mobile/image-grid-3.jpg" alt="The gallery's circular ceiling arches over the upper viewing area. Designed by architect Hanz Lego.">
-          </picture>
-          <div class="box">
-            <h2 class="gallery__heading">Come &amp; be inspired</h2>
-            <p class="gallery__text">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+              <img src="assets/mobile/image-grid-3.jpg" alt="The gallery's circular ceiling arches over the upper viewing area. Designed by architect Hanz Lego.">
+            </picture>
+            <div class="collection-2__text">
+              <h2 class="gallery__heading">Come &amp; be inspired</h2>
+              <p class="gallery__text">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+            </div>
           </div>
         </div>
       </section>
