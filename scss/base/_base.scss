@@ -1,0 +1,56 @@
+// ___________________________________________________________________
+// Base Styles
+// ___________________________________________________________________
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1, 
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: $color-primary;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: $font-family--primary;
+  text-transform: uppercase;
+}
+
+h1 {
+  @include text($headingM, $font-weight--bold, $color-secondary);
+  line-height: $line-heightXL;
+}
+
+h2 {
+  @include text($headingS, $font-weight--bold, $color-secondary);
+  line-height: $line-heightXL;
+}
+
+p {
+  @include text($body__small, $font-weight--light, $color-tertiary);
+  font-family: $font-family--secondary;
+  line-height: $line__bodyS;
+}

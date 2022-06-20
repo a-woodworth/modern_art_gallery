@@ -1,0 +1,16 @@
+// ___________________________________________________________________
+// Mixins
+// ___________________________________________________________________
+
+// Size
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Text
+@mixin text($size, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
