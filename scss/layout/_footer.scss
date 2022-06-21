@@ -7,9 +7,30 @@
 
 footer {
   background-color: $color-secondary;
+
+  a {
+    color: $color-primary;
+  }
+
+  a svg {
+    fill: currentColor;
+  }
+
+  .map-footer {
+    background-color: $color-accent;
+
+    a {
+      color: $color-secondary;
+    }
+
+    a svg {
+      fill: currentColor;
+    }
+  }
 }
 
-.main-footer {
+.main-footer,
+.map-footer {
   padding: 3rem 2.375rem;
   width: 100%;
 
@@ -23,6 +44,10 @@ footer {
     font-style: normal;
     line-height: 1.6;
     margin-bottom: 2.375rem;
+  }
+
+  address.map-address {
+    color: $color-secondary;
   }
 }
 

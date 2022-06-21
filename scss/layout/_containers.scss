@@ -15,6 +15,14 @@
   margin-bottom: 7.5rem;
 }
 
+// Location Styles
 .map-container {
   position: relative;
+  width: 100%;
+}
+
+.map-container__heading {
+  background-color: $color-secondary;
+  padding-inline: 1rem;
+  width: 100%;
 }

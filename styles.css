@@ -112,6 +112,13 @@ a:focus {
 
 .map-container {
   position: relative;
+  width: 100%;
+}
+
+.map-container__heading {
+  background-color: hsl(0, 0%, 8%);
+  padding-inline: 1rem;
+  width: 100%;
 }
 
 .hero__image {
@@ -196,18 +203,73 @@ a:focus {
   padding-top: 3rem;
 }
 
+.map-container img {
+  display: block;
+}
+
+.map__heading {
+  font-size: 3.125rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+  padding: 3rem 0;
+}
+
+.map-container__heading > h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(24, 56%, 63%);
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.map-container__heading > address {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.map__text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 3.5rem;
+}
+
 footer {
   background-color: hsl(0, 0%, 8%);
 }
+footer a {
+  color: hsl(0, 0%, 100%);
+}
+footer a svg {
+  fill: currentColor;
+}
+footer .map-footer {
+  background-color: hsl(24, 56%, 63%);
+}
+footer .map-footer a {
+  color: hsl(0, 0%, 8%);
+}
+footer .map-footer a svg {
+  fill: currentColor;
+}
 
-.main-footer {
+.main-footer,
+.map-footer {
   padding: 3rem 2.375rem;
   width: 100%;
 }
-.main-footer .logo {
+.main-footer .logo,
+.map-footer .logo {
   margin-bottom: 2.5rem;
 }
-.main-footer address {
+.main-footer address,
+.map-footer address {
   font-size: 0.975rem;
   font-weight: 300;
   color: hsl(0, 0%, 100%);
@@ -215,6 +277,10 @@ footer {
   font-style: normal;
   line-height: 1.6;
   margin-bottom: 2.375rem;
+}
+.main-footer address.map-address,
+.map-footer address.map-address {
+  color: hsl(0, 0%, 8%);
 }
 
 .social__list {

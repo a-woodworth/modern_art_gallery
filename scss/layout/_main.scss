@@ -86,3 +86,35 @@
 .collection-2__text h2 {
   padding-top: 3rem;
 }
+
+// Location Styles
+.map-container img {
+  display: block;
+}
+
+.map__heading {
+  @include text($headingS, $font-weight--black, $color-primary);
+  padding: 3rem 0;
+}
+
+.map-container__heading > h2 {
+  @include text(2rem, $font-weight--black, $color-accent);
+  font-style: normal;
+  line-height: $line-height__default;
+  margin-bottom: 1.25rem;
+}
+
+.map-container__heading > address {
+  @include text($body__small, $font-weight--light, $color-primary);
+  font-family: $font-family--secondary;
+  font-style: normal;
+  line-height: $line__bodyS;
+  margin-bottom: 1.25rem;
+}
+
+.map__text {
+  @include text($body__small, $font-weight--light, $color-primary);
+  padding-bottom: 3.5rem;
+}
+
+
