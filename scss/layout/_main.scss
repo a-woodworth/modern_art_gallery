@@ -10,10 +10,9 @@
 }
 
 .hero__image img {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 9 / 21;
   display: block;
-  height: auto;
-  max-height: 15rem;
+  height: 15rem;
   object-fit: cover;
   width: 100%;
 }
@@ -28,6 +27,7 @@
 }
 
 .gallery {
+  margin-bottom: 7.5rem;
   padding-inline: 1rem;
 }
 

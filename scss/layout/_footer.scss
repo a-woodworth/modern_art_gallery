@@ -4,3 +4,29 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+footer {
+  background-color: $color-secondary;
+}
+
+.main-footer {
+  padding: 3rem 2.375rem;
+  width: 100%;
+
+  .logo {
+    margin-bottom: 2.5rem;
+  }
+
+  address {
+    @include text(0.975rem, $font-weight--light, $color-primary);
+    font-family: $font-family--secondary;
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 2.375rem;
+  }
+}
+
+.social__list {
+  display: flex;
+  gap: 1.25rem;
+}

@@ -5,15 +5,16 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.hero-container a {
+.hero-container a,
+.map-container a {
   background-color: $color-secondary;
   display: flex;
   justify-content: space-between;
-  max-width: 16.25rem;
+  max-width: 17.5rem;
 
   .text {
     align-self: flex-start;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
   }
 
   .icon {
@@ -29,4 +30,8 @@
   &:hover .icon {
     background-color: $color-secondary;
   }
+}
+
+.map-container a {
+  position: absolute;
 }

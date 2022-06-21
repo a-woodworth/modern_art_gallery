@@ -68,26 +68,35 @@ a:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.hero-container a {
+.hero-container a,
+.map-container a {
   background-color: hsl(0, 0%, 8%);
   display: flex;
   justify-content: space-between;
-  max-width: 16.25rem;
+  max-width: 17.5rem;
 }
-.hero-container a .text {
+.hero-container a .text,
+.map-container a .text {
   align-self: flex-start;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
 }
-.hero-container a .icon {
+.hero-container a .icon,
+.map-container a .icon {
   align-self: flex-end;
   background-color: hsl(24, 56%, 63%);
   padding: 1.5rem;
 }
-.hero-container a:hover {
+.hero-container a:hover,
+.map-container a:hover {
   background-color: hsl(24, 56%, 63%);
 }
-.hero-container a:hover .icon {
+.hero-container a:hover .icon,
+.map-container a:hover .icon {
   background-color: hsl(0, 0%, 8%);
+}
+
+.map-container a {
+  position: absolute;
 }
 
 .container {
@@ -101,15 +110,18 @@ a:focus {
   margin-bottom: 7.5rem;
 }
 
+.map-container {
+  position: relative;
+}
+
 .hero__image {
   margin: 0 auto;
 }
 
 .hero__image img {
-  aspect-ratio: 3/2;
+  aspect-ratio: 9/21;
   display: block;
-  height: auto;
-  max-height: 15rem;
+  height: 15rem;
   object-fit: cover;
   width: 100%;
 }
@@ -124,6 +136,7 @@ a:focus {
 }
 
 .gallery {
+  margin-bottom: 7.5rem;
   padding-inline: 1rem;
 }
 
@@ -181,6 +194,32 @@ a:focus {
 
 .collection-2__text h2 {
   padding-top: 3rem;
+}
+
+footer {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.main-footer {
+  padding: 3rem 2.375rem;
+  width: 100%;
+}
+.main-footer .logo {
+  margin-bottom: 2.5rem;
+}
+.main-footer address {
+  font-size: 0.975rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: 2.375rem;
+}
+
+.social__list {
+  display: flex;
+  gap: 1.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
