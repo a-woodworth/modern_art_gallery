@@ -43,6 +43,10 @@ a {
 h1 {
   @include text($headingM, $font-weight--black, $color-secondary);
   line-height: $line-heightXL;
+
+  @media #{$brkpoint-md} {
+    @include text($headingL);
+  }
 }
 
 h2 {

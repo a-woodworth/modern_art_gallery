@@ -8,14 +8,19 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-}
 
-.hero-container {
-  padding-inline: 1rem;
-  margin-bottom: 7.5rem;
+  @media #{$brkpoint-md} {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 // Location Styles
+.map-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
 .map-container {
   position: relative;
   width: 100%;

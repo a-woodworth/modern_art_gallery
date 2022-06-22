@@ -5,6 +5,16 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+.hero {
+  @media #{$brkpoint-md} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-column: span 2;
+    margin-bottom: 7.5rem;
+  }
+}
+
 .hero__image {
   margin: 0 auto;
 }
@@ -15,20 +25,62 @@
   height: 15rem;
   object-fit: cover;
   width: 100%;
+
+  @media #{$brkpoint-md} {
+    height: auto;
+    width: auto;
+  }
+}
+
+.hero-subheading {
+  padding-inline: 1rem;
+  margin-bottom: 7.5rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 0;
+    margin-left: -3rem;
+    padding-inline: 0;
+    padding-right: 3rem;
+  }
 }
 
 .hero__heading,
 .hero__text {
   margin-bottom: 2rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 3rem;
+  }
 }
 
 .hero__heading {
+  margin-inline: 1rem;
   padding-top: 2rem;
+
+  @media #{$brkpoint-md} {
+    margin-left: -3rem;
+    padding-top: 9.0625rem;
+  }
 }
 
 .gallery {
   margin-bottom: 7.5rem;
   padding-inline: 1rem;
+
+  @media #{$brkpoint-md} {
+    grid-column: span 2;
+    padding-inline: 2.5rem;
+  }
+}
+
+.gallery__heading {
+  padding-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+
+  @media #{$brkpoint-md} {
+    padding-top: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .collection-1__image img {
@@ -38,13 +90,21 @@
   width: 100%;
 }
 
-.gallery__heading {
-  padding-top: 1.5625rem;
-  margin-bottom: 1.5625rem;
+.collection-1__text {
+  @media #{$brkpoint-md} {
+    flex-basis: 35%;
+  }
 }
 
 .art-collection-1 {
   margin-bottom: 2rem;
+
+  @media #{$brkpoint-md} {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4.25rem;
+    margin-bottom: 0.6875rem;
+  }
 }
 
 .art-collection-2 {
@@ -52,6 +112,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   row-gap: 1rem;
+
+  @media #{$brkpoint-md} {
+    grid-template-columns: 1fr 280px;
+    column-gap: 0.6875rem;
+    row-gap: 0.6875rem;
+  }
 }
 
 .collection-2__image-1 img,
@@ -64,11 +130,23 @@
 .collection-2__image-1 img {
   aspect-ratio: 343 / 480;
   object-fit: fill;
+
+  @media #{$brkpoint-md} {
+    aspect-ratio: 398 / 720;
+    object-fit: cover;
+    height: 45rem;
+    width: 100%;
+  }
 }
 
 .collection-2__image-2 img {
   aspect-ratio: 16 / 9;
   margin-bottom: 1rem;
+
+  @media #{$brkpoint-md} {
+    aspect-ratio: 280 / 313;
+    margin-bottom: 0.6875rem;
+  }
 }
 
 .collection-2__text {
@@ -76,6 +154,11 @@
   height: 18.3125rem;
   padding-inline: 1.5rem;
   width: 100%;
+
+  @media #{$brkpoint-md} {
+    height: 24.6875rem;
+    padding-inline: 1.75rem;
+  }
 }
 
 .collection-2__text h2,
@@ -116,5 +199,3 @@
   @include text($body__small, $font-weight--light, $color-primary);
   padding-bottom: 3.5rem;
 }
-
-
