@@ -78,7 +78,8 @@ a:focus {
   background-color: hsl(0, 0%, 8%);
   display: flex;
   justify-content: space-between;
-  max-width: 17rem;
+  min-width: 16.75rem;
+  max-width: 17.25rem;
 }
 .hero-container a .text,
 .map-container a .text {
@@ -91,6 +92,11 @@ a:focus {
   background-color: hsl(24, 56%, 63%);
   padding: 1.5rem;
 }
+.hero-container a .icon img,
+.map-container a .icon img {
+  height: 24px;
+  width: 8px;
+}
 .hero-container a:hover,
 .map-container a:hover {
   background-color: hsl(24, 56%, 63%);
@@ -102,6 +108,11 @@ a:focus {
 
 .map-container a {
   position: absolute;
+}
+@media (min-width: 48rem) {
+  .map-container a {
+    left: 2.5rem;
+  }
 }
 
 .container {
@@ -130,6 +141,12 @@ a:focus {
   background-color: hsl(0, 0%, 8%);
   padding-inline: 1rem;
   width: 100%;
+}
+@media (min-width: 48rem) {
+  .map-container__heading {
+    display: flex;
+    padding-inline: 2.5rem;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -196,7 +213,16 @@ a:focus {
 }
 
 .map-container img {
+  aspect-ratio: 375/550;
   display: block;
+  object-fit: cover;
+  max-height: 34.375rem;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  .map-container img {
+    max-height: 37.5rem;
+  }
 }
 
 .map__heading {
@@ -205,8 +231,13 @@ a:focus {
   color: hsl(0, 0%, 100%);
   padding: 3rem 0;
 }
+@media (min-width: 48rem) {
+  .map__heading {
+    padding: 5.5rem 4.25rem 0 0;
+  }
+}
 
-.map-container__heading > h2 {
+.map-container__heading .address-group > h2 {
   font-size: 2rem;
   font-weight: 900;
   color: hsl(24, 56%, 63%);
@@ -215,7 +246,7 @@ a:focus {
   margin-bottom: 1.25rem;
 }
 
-.map-container__heading > address {
+.map-container__heading .address-group > address {
   font-size: 1.125rem;
   font-weight: 300;
   color: hsl(0, 0%, 100%);
@@ -225,11 +256,23 @@ a:focus {
   margin-bottom: 1.25rem;
 }
 
+@media (min-width: 48rem) {
+  .address-group {
+    padding-top: 5.5rem;
+  }
+}
+
 .map__text {
   font-size: 1.125rem;
   font-weight: 300;
   color: hsl(0, 0%, 100%);
   padding-bottom: 3.5rem;
+}
+@media (min-width: 48rem) {
+  .map__text {
+    max-width: 42ch;
+    padding-bottom: 5rem;
+  }
 }
 
 .gallery {
@@ -405,8 +448,9 @@ footer .map-footer a svg {
 @media (min-width: 48rem) {
   .main-footer address,
 .map-footer address {
-    max-width: 25ch;
     flex-basis: 50%;
+    font-size: 1rem;
+    max-width: 25ch;
     margin-right: auto;
     margin-bottom: 0;
   }

@@ -6,22 +6,34 @@
 @use '../utilities/mixins' as *;
 
 .map-container img {
+  aspect-ratio: 375 / 550;
   display: block;
+  object-fit: cover;
+  max-height: 34.375rem;
+  width: 100%;
+
+  @media #{$brkpoint-md} {
+    max-height: 37.5rem;
+  }
 }
 
 .map__heading {
   @include text($headingS, $font-weight--black, $color-primary);
   padding: 3rem 0;
+
+  @media #{$brkpoint-md} {
+    padding: 5.5rem 4.25rem 0 0;
+  }
 }
 
-.map-container__heading > h2 {
+.map-container__heading .address-group > h2 {
   @include text(2rem, $font-weight--black, $color-accent);
   font-style: normal;
   line-height: $line-height__default;
   margin-bottom: 1.25rem;
 }
 
-.map-container__heading > address {
+.map-container__heading .address-group > address {
   @include text($body__small, $font-weight--light, $color-primary);
   font-family: $font-family--secondary;
   font-style: normal;
@@ -29,7 +41,18 @@
   margin-bottom: 1.25rem;
 }
 
+.address-group {
+  @media #{$brkpoint-md} {
+    padding-top: 5.5rem;
+  }
+}
+
 .map__text {
   @include text($body__small, $font-weight--light, $color-primary);
   padding-bottom: 3.5rem;
+
+  @media #{$brkpoint-md} {
+    max-width: 42ch;
+    padding-bottom: 5rem;
+  }
 }

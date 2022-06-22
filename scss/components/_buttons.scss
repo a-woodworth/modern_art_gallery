@@ -10,7 +10,8 @@
   background-color: $color-secondary;
   display: flex;
   justify-content: space-between;
-  max-width: 17rem;
+  min-width: 16.75rem;
+  max-width: 17.25rem;
 
   .text {
     align-self: flex-start;
@@ -21,6 +22,11 @@
     align-self: flex-end;
     background-color: $color-accent;
     padding: 1.5rem;
+  }
+
+  .icon img {
+    height: 24px;
+    width: 8px;
   }
 
   &:hover {
@@ -34,4 +40,8 @@
 
 .map-container a {
   position: absolute;
+
+  @media #{$brkpoint-md} {
+    left: 2.5rem;
+  }
 }

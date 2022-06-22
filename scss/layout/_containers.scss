@@ -30,4 +30,9 @@
   background-color: $color-secondary;
   padding-inline: 1rem;
   width: 100%;
+
+  @media #{$brkpoint-md} {
+    display: flex;
+    padding-inline: 2.5rem;
+  }
 }

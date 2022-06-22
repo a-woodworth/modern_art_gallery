@@ -60,8 +60,9 @@ footer {
     margin-bottom: 2.375rem;
 
     @media #{$brkpoint-md} {
-      max-width: 25ch;
       flex-basis: 50%;
+      font-size: 1rem;
+      max-width: 25ch;
       margin-right: auto;
       margin-bottom: 0;
     }
