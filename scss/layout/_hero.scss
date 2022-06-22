@@ -1,0 +1,64 @@
+// ___________________________________________________________________
+// Hero Section Styles
+// ___________________________________________________________________
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.hero {
+  @media #{$brkpoint-md} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-column: span 2;
+    margin-bottom: 7.5rem;
+  }
+}
+
+.hero__image {
+  margin: 0 auto;
+}
+
+.hero__image img {
+  aspect-ratio: 9 / 21;
+  display: block;
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
+
+  @media #{$brkpoint-md} {
+    height: auto;
+    width: auto;
+  }
+}
+
+.hero-subheading {
+  padding-inline: 1rem;
+  margin-bottom: 7.5rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 0;
+    margin-left: -3rem;
+    padding-inline: 0;
+    padding-right: 3rem;
+  }
+}
+
+.hero__heading,
+.hero__text {
+  margin-bottom: 2rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 3rem;
+  }
+}
+
+.hero__heading {
+  margin-inline: 1rem;
+  padding-top: 2rem;
+
+  @media #{$brkpoint-md} {
+    margin-left: -3rem;
+    padding-top: 9.0625rem;
+  }
+}

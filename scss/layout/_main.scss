@@ -1,67 +1,9 @@
 // ___________________________________________________________________
-// Main - Section Styles
+// Main - Gallery Section Styles
 // ___________________________________________________________________
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
-
-.hero {
-  @media #{$brkpoint-md} {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    grid-column: span 2;
-    margin-bottom: 7.5rem;
-  }
-}
-
-.hero__image {
-  margin: 0 auto;
-}
-
-.hero__image img {
-  aspect-ratio: 9 / 21;
-  display: block;
-  height: 15rem;
-  object-fit: cover;
-  width: 100%;
-
-  @media #{$brkpoint-md} {
-    height: auto;
-    width: auto;
-  }
-}
-
-.hero-subheading {
-  padding-inline: 1rem;
-  margin-bottom: 7.5rem;
-
-  @media #{$brkpoint-md} {
-    margin-bottom: 0;
-    margin-left: -3rem;
-    padding-inline: 0;
-    padding-right: 3rem;
-  }
-}
-
-.hero__heading,
-.hero__text {
-  margin-bottom: 2rem;
-
-  @media #{$brkpoint-md} {
-    margin-bottom: 3rem;
-  }
-}
-
-.hero__heading {
-  margin-inline: 1rem;
-  padding-top: 2rem;
-
-  @media #{$brkpoint-md} {
-    margin-left: -3rem;
-    padding-top: 9.0625rem;
-  }
-}
 
 .gallery {
   margin-bottom: 7.5rem;
@@ -156,7 +98,7 @@
   width: 100%;
 
   @media #{$brkpoint-md} {
-    height: 24.6875rem;
+    height: 24.75rem;
     padding-inline: 1.75rem;
   }
 }
@@ -168,34 +110,4 @@
 
 .collection-2__text h2 {
   padding-top: 3rem;
-}
-
-// Location Styles
-.map-container img {
-  display: block;
-}
-
-.map__heading {
-  @include text($headingS, $font-weight--black, $color-primary);
-  padding: 3rem 0;
-}
-
-.map-container__heading > h2 {
-  @include text(2rem, $font-weight--black, $color-accent);
-  font-style: normal;
-  line-height: $line-height__default;
-  margin-bottom: 1.25rem;
-}
-
-.map-container__heading > address {
-  @include text($body__small, $font-weight--light, $color-primary);
-  font-family: $font-family--secondary;
-  font-style: normal;
-  line-height: $line__bodyS;
-  margin-bottom: 1.25rem;
-}
-
-.map__text {
-  @include text($body__small, $font-weight--light, $color-primary);
-  padding-bottom: 3.5rem;
 }

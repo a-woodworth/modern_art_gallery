@@ -195,6 +195,43 @@ a:focus {
   }
 }
 
+.map-container img {
+  display: block;
+}
+
+.map__heading {
+  font-size: 3.125rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+  padding: 3rem 0;
+}
+
+.map-container__heading > h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(24, 56%, 63%);
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.map-container__heading > address {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.map__text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 3.5rem;
+}
+
 .gallery {
   margin-bottom: 7.5rem;
   padding-inline: 1rem;
@@ -295,7 +332,7 @@ a:focus {
 }
 @media (min-width: 48rem) {
   .collection-2__text {
-    height: 24.6875rem;
+    height: 24.75rem;
     padding-inline: 1.75rem;
   }
 }
@@ -307,43 +344,6 @@ a:focus {
 
 .collection-2__text h2 {
   padding-top: 3rem;
-}
-
-.map-container img {
-  display: block;
-}
-
-.map__heading {
-  font-size: 3.125rem;
-  font-weight: 900;
-  color: hsl(0, 0%, 100%);
-  padding: 3rem 0;
-}
-
-.map-container__heading > h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: hsl(24, 56%, 63%);
-  font-style: normal;
-  line-height: 1;
-  margin-bottom: 1.25rem;
-}
-
-.map-container__heading > address {
-  font-size: 1.125rem;
-  font-weight: 300;
-  color: hsl(0, 0%, 100%);
-  font-family: "Outfit", sans-serif;
-  font-style: normal;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
-
-.map__text {
-  font-size: 1.125rem;
-  font-weight: 300;
-  color: hsl(0, 0%, 100%);
-  padding-bottom: 3.5rem;
 }
 
 footer {
@@ -370,9 +370,27 @@ footer .map-footer a svg {
   padding: 3rem 2.375rem;
   width: 100%;
 }
+@media (min-width: 48rem) {
+  .main-footer,
+.map-footer {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 3rem 2.5rem;
+  }
+}
 .main-footer .logo,
 .map-footer .logo {
+  height: 2.5rem;
   margin-bottom: 2.5rem;
+  max-width: 6.875rem;
+}
+@media (min-width: 48rem) {
+  .main-footer .logo,
+.map-footer .logo {
+    flex-basis: 25%;
+    margin-right: 4rem;
+  }
 }
 .main-footer address,
 .map-footer address {
@@ -383,6 +401,15 @@ footer .map-footer a svg {
   font-style: normal;
   line-height: 1.6;
   margin-bottom: 2.375rem;
+}
+@media (min-width: 48rem) {
+  .main-footer address,
+.map-footer address {
+    max-width: 25ch;
+    flex-basis: 50%;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }
 .main-footer address.map-address,
 .map-footer address.map-address {
