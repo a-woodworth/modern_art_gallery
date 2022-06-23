@@ -5,7 +5,7 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.hero-container a,
+.hero-subheading a,
 .map-container a {
   background-color: $color-secondary;
   display: flex;

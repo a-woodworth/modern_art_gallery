@@ -12,6 +12,10 @@
   @media #{$brkpoint-md} {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media #{$brkpoint-lg} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 // Location Containters
