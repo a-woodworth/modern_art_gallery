@@ -9,10 +9,7 @@
   @media #{$brkpoint-md} {
     display: grid;
     grid-template-columns:  1fr 1fr;
-    grid-template-rows: 350px 350px;
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: nowrap;
+    grid-template-rows: 21.875rem 21.875rem;
     grid-column: span 2;
     margin-bottom: 7.5rem;
   }
@@ -20,9 +17,12 @@
   @media #{$brkpoint-lg} {
     grid-column: span 3;
     grid-template-columns:  auto 1fr auto;
+    grid-template-rows: 25rem 25rem;
+    height: 50rem;
     max-width: 69.375rem;
     padding-inline: 10.25rem;
-    background: linear-gradient(90deg, $color-secondary 50%, $color-primary 50%);
+    background: linear-gradient(90deg, $color-secondary 65%, $color-primary 35%);
+    margin-bottom: 11.25rem;
   }
 }
 
@@ -68,9 +68,10 @@
 
   @media #{$brkpoint-lg} {
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 1 / span 2;
     margin-top: 0;
     padding-top: 11.875rem;
+    margin-left: -4.5rem;
   }
 }
 
@@ -80,6 +81,11 @@
   @media #{$brkpoint-md} {
     margin-bottom: 3rem;
     width: 30ch;
+  }
+
+  @media #{$brkpoint-lg} {
+    margin-bottom: 4rem;
+    width: 24ch;
   }
 }
 
@@ -100,7 +106,7 @@
     grid-column: 1;
     margin-left: 0;
     padding-top: 11.875rem;
-    margin-right: -9rem;
+    margin-right: -12.25rem;
     width: 10ch;
     mix-blend-mode: difference;
     color: $color-primary;

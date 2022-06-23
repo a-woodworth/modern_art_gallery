@@ -47,6 +47,10 @@ h1 {
   @media #{$brkpoint-md} {
     @include text($headingL);
   }
+
+  @media #{$brkpoint-lg} {
+    @include text($headingXL, $font-weight--black, $color-primary);
+  }
 }
 
 h2 {
@@ -58,6 +62,11 @@ p {
   @include text($body__small, $font-weight--light, $color-tertiary);
   font-family: $font-family--secondary;
   line-height: $line__bodyS;
+
+  @media #{$brkpoint-lg} {
+    @include text($body__medium);
+    line-height: $line__bodyM;
+  }
 }
 
 a {

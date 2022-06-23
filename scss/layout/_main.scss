@@ -13,6 +13,11 @@
     grid-column: span 2;
     padding-inline: 2.5rem;
   }
+
+  @media #{$brkpoint-lg} {
+    grid-column: span 3;
+    padding-inline: 10.25rem;
+  }
 }
 
 .gallery__heading {
@@ -30,6 +35,10 @@
   display: block;
   object-fit: contain;
   width: 100%;
+
+  @media #{$brkpoint-lg} {
+    aspect-ratio: 3 / 2;
+  }
 }
 
 .collection-1__text {
