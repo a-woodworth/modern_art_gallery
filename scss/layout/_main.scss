@@ -30,18 +30,41 @@
   }
 }
 
+.line-break::after {
+  content: '\a';
+  white-space: pre;
+
+  @media #{$brkpoint-lg} {
+    content: '';
+    white-space: normal;
+  }
+}
+
 .collection-1__image img {
   aspect-ratio: 1 / 1;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 
   @media #{$brkpoint-lg} {
     aspect-ratio: 3 / 2;
+    height: 25rem;
   }
 }
 
 .collection-1__text {
+  h2 {
+    @media #{$brkpoint-lg} {
+      width: 10ch;
+    }
+  }
+
+  p {
+    @media #{$brkpoint-lg} {
+      width: 24ch;
+    }
+  }
+
   @media #{$brkpoint-md} {
     flex-basis: 35%;
   }
@@ -53,8 +76,14 @@
   @media #{$brkpoint-md} {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 4.25rem;
     margin-bottom: 0.6875rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    margin-bottom: 1.875rem;
   }
 }
 

@@ -58,6 +58,14 @@ h2 {
   color: hsl(0, 0%, 8%);
   line-height: 0.9;
 }
+@media (min-width: 79.6875rem) {
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: hsl(0, 0%, 8%);
+    line-height: 1;
+  }
+}
 
 p {
   font-size: 1.125rem;
@@ -376,18 +384,40 @@ a:focus {
   }
 }
 
+.line-break::after {
+  content: "\a";
+  white-space: pre;
+}
+@media (min-width: 79.6875rem) {
+  .line-break::after {
+    content: "";
+    white-space: normal;
+  }
+}
+
 .collection-1__image img {
   aspect-ratio: 1/1;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 @media (min-width: 79.6875rem) {
   .collection-1__image img {
     aspect-ratio: 3/2;
+    height: 25rem;
   }
 }
 
+@media (min-width: 79.6875rem) {
+  .collection-1__text h2 {
+    width: 10ch;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .collection-1__text p {
+    width: 24ch;
+  }
+}
 @media (min-width: 48rem) {
   .collection-1__text {
     flex-basis: 35%;
@@ -401,8 +431,15 @@ a:focus {
   .art-collection-1 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 4.25rem;
     margin-bottom: 0.6875rem;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .art-collection-1 {
+    margin-bottom: 1.875rem;
   }
 }
 

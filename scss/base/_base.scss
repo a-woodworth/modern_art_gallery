@@ -56,6 +56,11 @@ h1 {
 h2 {
   @include text($headingS, $font-weight--black, $color-secondary);
   line-height: $line-heightXL;
+
+  @media #{$brkpoint-lg} {
+    @include text($headingM, $font-weight--black, $color-secondary);
+    line-height: $line-height__default;
+  }
 }
 
 p {
