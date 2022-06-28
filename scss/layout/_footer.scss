@@ -38,7 +38,11 @@ footer {
     display: flex;
     justify-content: start;
     align-items: flex-start;
-    padding: 3rem 2.5rem;
+    padding: 3rem 2.5rem;  
+  }
+
+  @media #{$brkpoint-lg} {
+    padding: 5rem 10.3125rem;
   }
 
   .logo {
@@ -49,6 +53,12 @@ footer {
     @media #{$brkpoint-md} {
       flex-basis: 25%;
       margin-right: 4rem;
+    }
+
+    @media #{$brkpoint-lg} {
+      height: 3.625rem;
+      max-width: 10rem;
+      margin-right: 8.75rem;
     }
   }
 
@@ -65,6 +75,11 @@ footer {
       max-width: 25ch;
       margin-right: auto;
       margin-bottom: 0;
+    }
+
+    @media #{$brkpoint-lg} {
+      font-size: 1.125rem;
+      max-width: 36ch;
     }
   }
 
