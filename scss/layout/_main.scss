@@ -28,6 +28,10 @@
     padding-top: 2.25rem;
     margin-bottom: 1.5rem;
   }
+
+  @media #{$brkpoint-lg} {
+    margin-bottom: 2rem;
+  }
 }
 
 .line-break::after {
@@ -98,6 +102,12 @@
     column-gap: 0.6875rem;
     row-gap: 0.6875rem;
   }
+
+  @media #{$brkpoint-lg} {
+    grid-template-columns: 1fr 445px;
+    column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
 }
 
 .collection-2__image-1 img,
@@ -109,13 +119,19 @@
 
 .collection-2__image-1 img {
   aspect-ratio: 343 / 480;
-  object-fit: fill;
+  // object-fit: fill;
 
   @media #{$brkpoint-md} {
     aspect-ratio: 398 / 720;
     object-fit: cover;
     height: 45rem;
     width: 100%;
+  }
+
+  @media #{$brkpoint-lg} {
+    aspect-ratio: 635 / 720;
+    height: auto;
+    width: auto;
   }
 }
 
@@ -126,6 +142,12 @@
   @media #{$brkpoint-md} {
     aspect-ratio: 280 / 313;
     margin-bottom: 0.6875rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 1.875rem;
   }
 }
 
@@ -139,6 +161,11 @@
     height: 24.75rem;
     padding-inline: 1.75rem;
   }
+
+  @media #{$brkpoint-lg} {
+    height: 24.5rem;
+    padding-inline: 3rem;
+  }
 }
 
 .collection-2__text h2,
@@ -148,4 +175,8 @@
 
 .collection-2__text h2 {
   padding-top: 3rem;
+
+  @media #{$brkpoint-lg} {
+    padding-top: 4.0625rem;
+  }
 }

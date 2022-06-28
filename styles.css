@@ -383,6 +383,11 @@ a:focus {
     margin-bottom: 1.5rem;
   }
 }
+@media (min-width: 79.6875rem) {
+  .gallery__heading {
+    margin-bottom: 2rem;
+  }
+}
 
 .line-break::after {
   content: "\a";
@@ -456,6 +461,13 @@ a:focus {
     row-gap: 0.6875rem;
   }
 }
+@media (min-width: 79.6875rem) {
+  .art-collection-2 {
+    grid-template-columns: 1fr 445px;
+    column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
+}
 
 .collection-2__image-1 img,
 .collection-2__image-2 img {
@@ -466,7 +478,6 @@ a:focus {
 
 .collection-2__image-1 img {
   aspect-ratio: 343/480;
-  object-fit: fill;
 }
 @media (min-width: 48rem) {
   .collection-2__image-1 img {
@@ -474,6 +485,13 @@ a:focus {
     object-fit: cover;
     height: 45rem;
     width: 100%;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .collection-2__image-1 img {
+    aspect-ratio: 635/720;
+    height: auto;
+    width: auto;
   }
 }
 
@@ -485,6 +503,13 @@ a:focus {
   .collection-2__image-2 img {
     aspect-ratio: 280/313;
     margin-bottom: 0.6875rem;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .collection-2__image-2 img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    margin-bottom: 1.875rem;
   }
 }
 
@@ -500,6 +525,12 @@ a:focus {
     padding-inline: 1.75rem;
   }
 }
+@media (min-width: 79.6875rem) {
+  .collection-2__text {
+    height: 24.5rem;
+    padding-inline: 3rem;
+  }
+}
 
 .collection-2__text h2,
 .collection-2__text p {
@@ -508,6 +539,11 @@ a:focus {
 
 .collection-2__text h2 {
   padding-top: 3rem;
+}
+@media (min-width: 79.6875rem) {
+  .collection-2__text h2 {
+    padding-top: 4.0625rem;
+  }
 }
 
 footer {
