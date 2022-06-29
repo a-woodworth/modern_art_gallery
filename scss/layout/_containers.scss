@@ -37,6 +37,11 @@
 
   @media #{$brkpoint-md} {
     display: flex;
+    justify-content: space-between;
     padding-inline: 2.5rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    padding-inline: 10.3125rem;
   }
 }

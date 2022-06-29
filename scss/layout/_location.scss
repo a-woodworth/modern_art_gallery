@@ -24,6 +24,11 @@
   @media #{$brkpoint-md} {
     padding: 5.5rem 4.25rem 0 0;
   }
+  @media #{$brkpoint-lg} {
+    @include text($headingL);
+    line-height: $line-height__default;
+    width: 10ch;
+  }
 }
 
 .map-container__heading .address-group > h2 {
@@ -31,6 +36,10 @@
   font-style: normal;
   line-height: $line-height__default;
   margin-bottom: 1.25rem;
+
+  @media #{$brkpoint-lg} {
+    @include text($headingXS);
+  }
 }
 
 .map-container__heading .address-group > address {
@@ -39,11 +48,21 @@
   font-style: normal;
   line-height: $line__bodyS;
   margin-bottom: 1.25rem;
+
+  @media #{$brkpoint-lg} {
+    @include text($body__medium);
+    line-height: $line__bodyM;
+  }
 }
 
 .address-group {
   @media #{$brkpoint-md} {
     padding-top: 5.5rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    flex-basis: 55%;
+    max-width: 33.25rem;
   }
 }
 
@@ -54,5 +73,9 @@
   @media #{$brkpoint-md} {
     max-width: 42ch;
     padding-bottom: 5rem;
+  }
+  @media #{$brkpoint-lg} {
+    @include text($body__medium);
+    line-height: $line__bodyM;
   }
 }

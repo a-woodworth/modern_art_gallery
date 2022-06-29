@@ -171,7 +171,13 @@ a:focus {
 @media (min-width: 48rem) {
   .map-container__heading {
     display: flex;
+    justify-content: space-between;
     padding-inline: 2.5rem;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .map-container__heading {
+    padding-inline: 10.3125rem;
   }
 }
 
@@ -317,6 +323,13 @@ a:focus {
     padding: 5.5rem 4.25rem 0 0;
   }
 }
+@media (min-width: 79.6875rem) {
+  .map__heading {
+    font-size: 4.375rem;
+    line-height: 1;
+    width: 10ch;
+  }
+}
 
 .map-container__heading .address-group > h2 {
   font-size: 2rem;
@@ -325,6 +338,11 @@ a:focus {
   font-style: normal;
   line-height: 1;
   margin-bottom: 1.25rem;
+}
+@media (min-width: 79.6875rem) {
+  .map-container__heading .address-group > h2 {
+    font-size: 2.25rem;
+  }
 }
 
 .map-container__heading .address-group > address {
@@ -336,10 +354,22 @@ a:focus {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
+@media (min-width: 79.6875rem) {
+  .map-container__heading .address-group > address {
+    font-size: 1.375rem;
+    line-height: 1.4;
+  }
+}
 
 @media (min-width: 48rem) {
   .address-group {
     padding-top: 5.5rem;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .address-group {
+    flex-basis: 55%;
+    max-width: 33.25rem;
   }
 }
 
@@ -353,6 +383,12 @@ a:focus {
   .map__text {
     max-width: 42ch;
     padding-bottom: 5rem;
+  }
+}
+@media (min-width: 79.6875rem) {
+  .map__text {
+    font-size: 1.375rem;
+    line-height: 1.4;
   }
 }
 
