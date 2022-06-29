@@ -135,6 +135,11 @@ a:focus {
     left: 2.5rem;
   }
 }
+@media (min-width: 79.6875rem) {
+  .map-container a {
+    left: 9.75rem;
+  }
+}
 
 .container {
   display: grid;
@@ -156,6 +161,12 @@ a:focus {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+}
+@media (min-width: 79.6875rem) {
+  .map-wrap {
+    margin-inline: auto;
+    max-width: 90rem;
+  }
 }
 
 .map-container {
@@ -192,14 +203,16 @@ a:focus {
 }
 @media (min-width: 79.6875rem) {
   .hero {
+    background: linear-gradient(90deg, hsl(0, 0%, 8%) 65%, hsl(0, 0%, 100%) 35%);
     grid-column: span 3;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 25rem 25rem;
     height: 50rem;
-    max-width: 69.375rem;
-    padding-inline: 10.25rem;
-    background: linear-gradient(90deg, hsl(0, 0%, 8%) 65%, hsl(0, 0%, 100%) 35%);
+    min-width: 69.375rem;
     margin-bottom: 11.25rem;
+    margin-inline: auto;
+    max-width: 90rem;
+    padding-inline: 10.25rem;
   }
 }
 
@@ -233,8 +246,8 @@ a:focus {
 }
 
 .hero-subheading {
-  padding-inline: 1rem;
   margin-bottom: 7.5rem;
+  padding-inline: 1rem;
 }
 @media (min-width: 48rem) {
   .hero-subheading {
@@ -251,9 +264,9 @@ a:focus {
   .hero-subheading {
     grid-column: 3;
     grid-row: 1/span 2;
+    margin-left: -4.5rem;
     margin-top: 0;
     padding-top: 11.875rem;
-    margin-left: -4.5rem;
   }
 }
 
@@ -289,13 +302,13 @@ a:focus {
 }
 @media (min-width: 79.6875rem) {
   .hero__heading {
+    color: hsl(0, 0%, 100%);
     grid-column: 1;
     margin-left: 0;
-    padding-top: 11.875rem;
     margin-right: -12.25rem;
-    width: 10ch;
     mix-blend-mode: difference;
-    color: hsl(0, 0%, 100%);
+    padding-top: 11.875rem;
+    width: 10ch;
   }
 }
 
@@ -405,18 +418,20 @@ a:focus {
 @media (min-width: 79.6875rem) {
   .gallery {
     grid-column: span 3;
+    margin-inline: auto;
+    max-width: 90rem;
     padding-inline: 10.25rem;
   }
 }
 
 .gallery__heading {
-  padding-top: 1.5625rem;
   margin-bottom: 1.5625rem;
+  padding-top: 1.5625rem;
 }
 @media (min-width: 48rem) {
   .gallery__heading {
-    padding-top: 2.25rem;
     margin-bottom: 1.5rem;
+    padding-top: 2.25rem;
   }
 }
 @media (min-width: 79.6875rem) {
@@ -585,6 +600,12 @@ a:focus {
 footer {
   background-color: hsl(0, 0%, 8%);
 }
+@media (min-width: 79.6875rem) {
+  footer {
+    margin-inline: auto;
+    max-width: 90rem;
+  }
+}
 footer a {
   color: hsl(0, 0%, 100%);
 }
@@ -618,6 +639,8 @@ footer .map-footer a svg {
 @media (min-width: 79.6875rem) {
   .main-footer,
 .map-footer {
+    margin-inline: auto;
+    max-width: 90rem;
     padding: 5rem 10.3125rem;
   }
 }

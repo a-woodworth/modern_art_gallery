@@ -23,6 +23,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+
+  @media #{$brkpoint-lg} {
+    margin-inline: auto;
+    max-width: 90rem;
+  }
 }
 
 .map-container {

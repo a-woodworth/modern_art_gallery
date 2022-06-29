@@ -8,6 +8,11 @@
 footer {
   background-color: $color-secondary;
 
+  @media #{$brkpoint-lg} {
+    margin-inline: auto;
+    max-width: 90rem;
+  }
+
   a {
     color: $color-primary;
   }
@@ -42,6 +47,8 @@ footer {
   }
 
   @media #{$brkpoint-lg} {
+    margin-inline: auto;
+    max-width: 90rem;
     padding: 5rem 10.3125rem;
   }
 

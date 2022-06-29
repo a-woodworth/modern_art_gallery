@@ -16,17 +16,19 @@
 
   @media #{$brkpoint-lg} {
     grid-column: span 3;
+    margin-inline: auto;
+    max-width: 90rem;
     padding-inline: 10.25rem;
   }
 }
 
 .gallery__heading {
-  padding-top: 1.5625rem;
   margin-bottom: 1.5625rem;
+  padding-top: 1.5625rem;
 
   @media #{$brkpoint-md} {
-    padding-top: 2.25rem;
     margin-bottom: 1.5rem;
+    padding-top: 2.25rem;
   }
 
   @media #{$brkpoint-lg} {
