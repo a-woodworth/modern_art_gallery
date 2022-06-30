@@ -5,16 +5,39 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.map-container img {
-  aspect-ratio: 375 / 550;
-  display: block;
-  object-fit: cover;
-  max-height: 34.375rem;
+#leaflet-map,
+.fallback-map {
+  height: 34.375rem;
+  position: relative;
   width: 100%;
 
   @media #{$brkpoint-md} {
     max-height: 37.5rem;
   }
+}
+
+#leaflet-map {
+  z-index: 1;
+}
+
+.fallback-map {
+// Fallback image in case leaflet.js map doesn't load
+  background-image: url('assets/mobile/image-map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+
+  @media #{$brkpoint-md} {
+    background-image: url('assets/tablet/image-map.png');
+  }
+
+  @media #{$brkpoint-lg} {
+    background-image: url('assets/desktop/image-map.png');
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 .map__heading {

@@ -129,6 +129,7 @@ a:focus {
 
 .map-container a {
   position: absolute;
+  z-index: 3;
 }
 @media (min-width: 48rem) {
   .map-container a {
@@ -170,6 +171,7 @@ a:focus {
 }
 
 .map-container {
+  display: block;
   position: relative;
   width: 100%;
 }
@@ -312,17 +314,42 @@ a:focus {
   }
 }
 
-.map-container img {
-  aspect-ratio: 375/550;
-  display: block;
-  object-fit: cover;
-  max-height: 34.375rem;
+#leaflet-map,
+.fallback-map {
+  height: 34.375rem;
+  position: relative;
   width: 100%;
 }
 @media (min-width: 48rem) {
-  .map-container img {
+  #leaflet-map,
+.fallback-map {
     max-height: 37.5rem;
   }
+}
+
+#leaflet-map {
+  z-index: 1;
+}
+
+.fallback-map {
+  background-image: url("assets/mobile/image-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+@media (min-width: 48rem) {
+  .fallback-map {
+    background-image: url("assets/tablet/image-map.png");
+  }
+}
+@media (min-width: 79.6875rem) {
+  .fallback-map {
+    background-image: url("assets/desktop/image-map.png");
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 .map__heading {

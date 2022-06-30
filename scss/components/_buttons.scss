@@ -40,6 +40,7 @@
 
 .map-container a {
   position: absolute;
+  z-index: 3;
 
   @media #{$brkpoint-md} {
     left: 2.5rem;
