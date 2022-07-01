@@ -12,7 +12,7 @@
   width: 100%;
 
   @media #{$brkpoint-md} {
-    max-height: 37.5rem;
+    height: 37.5rem;
   }
 }
 
@@ -25,7 +25,6 @@
   background-image: url('assets/mobile/image-map.png');
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
 
   @media #{$brkpoint-md} {
     background-image: url('assets/tablet/image-map.png');
@@ -34,10 +33,6 @@
   @media #{$brkpoint-lg} {
     background-image: url('assets/desktop/image-map.png');
   }
-}
-
-.hidden {
-  display: none;
 }
 
 .map__heading {

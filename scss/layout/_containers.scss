@@ -38,16 +38,16 @@
 
 .map-container__heading {
   background-color: $color-secondary;
-  padding-inline: 1rem;
+  padding-inline: $pad-in__S;
   width: 100%;
 
   @media #{$brkpoint-md} {
     display: flex;
     justify-content: space-between;
-    padding-inline: 2.5rem;
+    padding-inline: $pad-in__M;
   }
 
   @media #{$brkpoint-lg} {
-    padding-inline: 10.3125rem;
+    padding-inline: $pad-in__L;
   }
 }

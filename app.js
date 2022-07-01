@@ -2,9 +2,12 @@
 
 const map = L.map('leaflet-map', {
   center: [41.481310, -71.310410],
-  zoom: 16,
-  scrollWheelZoom: false,
-  zoomControl: false
+  zoom: 15,
+  dragging: false,
+  doubleClickZoom: false,
+  minZoom: 13,
+  maxZoom: 18,
+  scrollWheelZoom: false
 });
 
 const mapIcon = L.icon({
@@ -19,7 +22,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker(
   [41.481310, -71.310410], { 
     icon: mapIcon,
-    alt: 'Modern Art Gallery' 
+    alt: 'Modern Art Gallery marker'
 })
 .addTo(map)
 .bindPopup('Modern Art Gallery');

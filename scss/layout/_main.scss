@@ -7,18 +7,18 @@
 
 .gallery {
   margin-bottom: 7.5rem;
-  padding-inline: 1rem;
+  padding-inline: $pad-in__S;
 
   @media #{$brkpoint-md} {
     grid-column: span 2;
-    padding-inline: 2.5rem;
+    padding-inline: $pad-in__M;
   }
 
   @media #{$brkpoint-lg} {
     grid-column: span 3;
     margin-inline: auto;
     max-width: 90rem;
-    padding-inline: 10.25rem;
+    padding-inline: $pad-in__L;
   }
 }
 
@@ -47,10 +47,10 @@
 }
 
 .collection-1__image img {
+  @include size(100%);
   aspect-ratio: 1 / 1;
   display: block;
   object-fit: cover;
-  width: 100%;
 
   @media #{$brkpoint-lg} {
     aspect-ratio: 3 / 2;
@@ -100,13 +100,13 @@
   row-gap: 1rem;
 
   @media #{$brkpoint-md} {
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 17.5rem;
     column-gap: 0.6875rem;
     row-gap: 0.6875rem;
   }
 
   @media #{$brkpoint-lg} {
-    grid-template-columns: 1fr 445px;
+    grid-template-columns: 1fr 27.8125rem;
     column-gap: 1.875rem;
     row-gap: 1.875rem;
   }
@@ -120,17 +120,14 @@
 }
 
 .collection-2__image-1 img {
-  aspect-ratio: 343 / 480;
+  aspect-ratio: 2 / 3;
 
   @media #{$brkpoint-md} {
-    aspect-ratio: 398 / 720;
     object-fit: cover;
     height: 45rem;
-    width: 100%;
   }
 
   @media #{$brkpoint-lg} {
-    aspect-ratio: 635 / 720;
     height: auto;
     width: auto;
   }
@@ -141,13 +138,12 @@
   margin-bottom: 1rem;
 
   @media #{$brkpoint-md} {
-    aspect-ratio: 280 / 313;
+    height: 19.5625rem;
     margin-bottom: 0.6875rem;
   }
 
   @media #{$brkpoint-lg} {
     aspect-ratio: 3 / 2;
-    object-fit: cover;
     margin-bottom: 1.875rem;
   }
 }
@@ -164,7 +160,7 @@
   }
 
   @media #{$brkpoint-lg} {
-    height: 24.5rem;
+    height: 23.5625rem;
     padding-inline: 3rem;
   }
 }

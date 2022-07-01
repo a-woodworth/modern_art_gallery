@@ -115,8 +115,8 @@ a:focus {
 }
 .hero-subheading a .icon img,
 .map-container a .icon img {
-  height: 24px;
-  width: 8px;
+  width: 0.5rem;
+  height: 1.5rem;
 }
 .hero-subheading a:hover,
 .map-container a:hover {
@@ -129,7 +129,7 @@ a:focus {
 
 .map-container a {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
 }
 @media (min-width: 48rem) {
   .map-container a {
@@ -190,7 +190,7 @@ a:focus {
 }
 @media (min-width: 79.6875rem) {
   .map-container__heading {
-    padding-inline: 10.3125rem;
+    padding-inline: 10.25rem;
   }
 }
 
@@ -211,8 +211,7 @@ a:focus {
     grid-template-rows: 25rem 25rem;
     height: 50rem;
     min-width: 69.375rem;
-    margin-bottom: 11.25rem;
-    margin-inline: auto;
+    margin: 0 auto 11.25rem auto;
     max-width: 90rem;
     padding-inline: 10.25rem;
   }
@@ -234,16 +233,16 @@ a:focus {
 }
 
 .hero__image img {
+  width: 100%;
+  height: 15rem;
   aspect-ratio: 9/21;
   display: block;
-  height: 15rem;
   object-fit: cover;
-  width: 100%;
 }
 @media (min-width: 48rem) {
   .hero__image img {
-    height: auto;
     width: auto;
+    height: auto;
   }
 }
 
@@ -255,20 +254,16 @@ a:focus {
   .hero-subheading {
     grid-column: 2;
     grid-row: 2;
-    margin-bottom: 0;
-    margin-left: -3rem;
-    margin-top: -1.75rem;
-    padding-inline: 0;
-    padding-right: 3rem;
+    margin: -1.75rem 0 0 -3rem;
+    padding: 0 3rem 0 0;
   }
 }
 @media (min-width: 79.6875rem) {
   .hero-subheading {
     grid-column: 3;
     grid-row: 1/span 2;
-    margin-left: -4.5rem;
-    margin-top: 0;
-    padding-top: 11.875rem;
+    margin: 0 0 0 -4.5rem;
+    padding: 11.875rem 0 0 0;
   }
 }
 
@@ -289,16 +284,14 @@ a:focus {
 }
 
 .hero__heading {
-  margin-bottom: 2rem;
-  margin-inline: 1rem;
+  margin: 0 1rem 2rem 1rem;
   padding-top: 2rem;
 }
 @media (min-width: 48rem) {
   .hero__heading {
     grid-column: 2;
     grid-row: 1;
-    margin-bottom: 0;
-    margin-left: -3rem;
+    margin: 0 0 0 -3rem;
     padding-top: 9.0625rem;
   }
 }
@@ -306,8 +299,7 @@ a:focus {
   .hero__heading {
     color: hsl(0, 0%, 100%);
     grid-column: 1;
-    margin-left: 0;
-    margin-right: -12.25rem;
+    margin: 0 -12.25rem 0 0;
     mix-blend-mode: difference;
     padding-top: 11.875rem;
     width: 10ch;
@@ -323,7 +315,7 @@ a:focus {
 @media (min-width: 48rem) {
   #leaflet-map,
 .fallback-map {
-    max-height: 37.5rem;
+    height: 37.5rem;
   }
 }
 
@@ -335,7 +327,6 @@ a:focus {
   background-image: url("assets/mobile/image-map.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
 }
 @media (min-width: 48rem) {
   .fallback-map {
@@ -346,10 +337,6 @@ a:focus {
   .fallback-map {
     background-image: url("assets/desktop/image-map.png");
   }
-}
-
-.hidden {
-  display: none;
 }
 
 .map__heading {
@@ -479,10 +466,11 @@ a:focus {
 }
 
 .collection-1__image img {
+  width: 100%;
+  height: 100%;
   aspect-ratio: 1/1;
   display: block;
   object-fit: cover;
-  width: 100%;
 }
 @media (min-width: 79.6875rem) {
   .collection-1__image img {
@@ -534,14 +522,14 @@ a:focus {
 }
 @media (min-width: 48rem) {
   .art-collection-2 {
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 17.5rem;
     column-gap: 0.6875rem;
     row-gap: 0.6875rem;
   }
 }
 @media (min-width: 79.6875rem) {
   .art-collection-2 {
-    grid-template-columns: 1fr 445px;
+    grid-template-columns: 1fr 27.8125rem;
     column-gap: 1.875rem;
     row-gap: 1.875rem;
   }
@@ -555,19 +543,16 @@ a:focus {
 }
 
 .collection-2__image-1 img {
-  aspect-ratio: 343/480;
+  aspect-ratio: 2/3;
 }
 @media (min-width: 48rem) {
   .collection-2__image-1 img {
-    aspect-ratio: 398/720;
     object-fit: cover;
     height: 45rem;
-    width: 100%;
   }
 }
 @media (min-width: 79.6875rem) {
   .collection-2__image-1 img {
-    aspect-ratio: 635/720;
     height: auto;
     width: auto;
   }
@@ -579,14 +564,13 @@ a:focus {
 }
 @media (min-width: 48rem) {
   .collection-2__image-2 img {
-    aspect-ratio: 280/313;
+    height: 19.5625rem;
     margin-bottom: 0.6875rem;
   }
 }
 @media (min-width: 79.6875rem) {
   .collection-2__image-2 img {
     aspect-ratio: 3/2;
-    object-fit: cover;
     margin-bottom: 1.875rem;
   }
 }
@@ -605,7 +589,7 @@ a:focus {
 }
 @media (min-width: 79.6875rem) {
   .collection-2__text {
-    height: 24.5rem;
+    height: 23.5625rem;
     padding-inline: 3rem;
   }
 }
