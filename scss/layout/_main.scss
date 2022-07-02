@@ -16,7 +16,7 @@
 
   @media #{$brkpoint-lg} {
     grid-column: span 3;
-    margin-inline: auto;
+    margin: 0 auto 11.25rem auto;
     max-width: 90rem;
     padding-inline: $pad-in__L;
   }
