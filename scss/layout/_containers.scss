@@ -15,6 +15,11 @@
 
   @media #{$brkpoint-lg} {
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 90rem;
+  }
+
+  @media #{$brkpoint-xl} {
+    margin-inline: auto;
   }
 }
 

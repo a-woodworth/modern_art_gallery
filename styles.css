@@ -155,6 +155,12 @@ a:focus {
 @media (min-width: 79.6875rem) {
   .container {
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 90rem;
+  }
+}
+@media (min-width: 90rem) {
+  .container {
+    margin-inline: auto;
   }
 }
 
@@ -434,8 +440,8 @@ a:focus {
   .gallery {
     grid-column: span 3;
     margin: 0 auto 11.25rem auto;
-    max-width: 90rem;
-    padding-inline: 10.25rem;
+    max-width: 69.375rem;
+    padding: 0;
   }
 }
 
@@ -554,8 +560,7 @@ a:focus {
 }
 @media (min-width: 79.6875rem) {
   .collection-2__image-1 img {
-    height: auto;
-    width: auto;
+    width: 39.0625rem;
   }
 }
 
@@ -573,6 +578,7 @@ a:focus {
   .collection-2__image-2 img {
     aspect-ratio: 3/2;
     margin-bottom: 1.875rem;
+    width: 27.8125rem;
   }
 }
 
@@ -713,3 +719,5 @@ footer .map-footer a svg {
   display: flex;
   gap: 1.25rem;
 }
+
+/*# sourceMappingURL=styles.css.map */

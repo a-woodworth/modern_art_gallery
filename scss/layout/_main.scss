@@ -17,8 +17,8 @@
   @media #{$brkpoint-lg} {
     grid-column: span 3;
     margin: 0 auto 11.25rem auto;
-    max-width: 90rem;
-    padding-inline: $pad-in__L;
+    max-width: 69.375rem;
+    padding: 0;
   }
 }
 
@@ -128,8 +128,7 @@
   }
 
   @media #{$brkpoint-lg} {
-    height: auto;
-    width: auto;
+    width: 39.0625rem;
   }
 }
 
@@ -145,6 +144,7 @@
   @media #{$brkpoint-lg} {
     aspect-ratio: 3 / 2;
     margin-bottom: 1.875rem;
+    width: 27.8125rem;
   }
 }
 
