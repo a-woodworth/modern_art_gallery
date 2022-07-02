@@ -12,6 +12,7 @@
     grid-template-rows: 21.875rem 21.875rem;
     grid-column: span 2;
     margin-bottom: 7.5rem;
+    width: 100%;
   }
 
   @media #{$brkpoint-lg} {
@@ -98,7 +99,7 @@
   @media #{$brkpoint-lg} {
     color: $color-primary;
     grid-column: 1;
-    margin: 0 -12.25rem 0 0;
+    margin: 0 -12.75rem 0 0;
     mix-blend-mode: difference;
     padding-top: 11.875rem;
     width: 10ch;
