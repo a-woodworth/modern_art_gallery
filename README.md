@@ -32,7 +32,7 @@ Users should be able to:
 ![Mobile Sceenshot](/screenshots/location-mobile-screenshot-375px.png)
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/art-gallery-responsive-design-with-css-grid-and-leaflet-js-ZZOFRPftJ7)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/modern_art_gallery/)
 
 ### Built with
